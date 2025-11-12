@@ -163,3 +163,48 @@ footer{
         font-size: 30px;
     }
 }   
+
+
+/*Página idiomas*/
+
+.containerLan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+   
+
+}
+
+.recuadro{
+     border: #000000 2px solid;
+
+     padding-left: 90px;
+     padding-right: 90px;
+     padding-top: 90px;
+     padding-bottom: 90px;
+
+     border-radius: 15px;
+
+}
+
+.idiomas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.espanol, .english{
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
