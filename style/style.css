@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Estilos golbales*/
+
 *{
     margin: 0;
     padding: 0;
@@ -7,18 +10,42 @@
 body{
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
+      
+    background-color: rgb(255, 255, 255);
     color: #333;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
+
+.container {
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fotoGit{
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
 header{
-    background-color: #101110;
-    color: #fff;
+    color: #000000;
     padding: 10px;
 }
-nav{
+
+/*nav{
     background-color: #101110;
     color: #fff;
     padding: 40px;
-}
+    position: sticky;
+}*/
+
 ul{
     list-style: none;
     display: flex;
@@ -26,10 +53,17 @@ ul{
 }
 li{
     margin: 0 10px;
+
+}
+.listaNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
 .enlaces{
     font-size: 20px;
@@ -43,7 +77,8 @@ a{
 }
 .presentacion{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
     padding: 50px;
 }
@@ -52,13 +87,21 @@ img{
     width: 250px;
     height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
 }
 
 img:hover{
     transform: scale(1.05);
-    transition: transform 0.3s ease;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: space-between;
 }
 
 .intro-text{
@@ -80,6 +123,29 @@ img:hover{
     margin-bottom: 20px;
 }
 
+
+
+/*Footer*/
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footContainer{
+    color: #ff6600;
+    font-weight: bold;
+}
+.footContainer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 /* Diseño Responsive*/
 
 @media (max-width: 768px) {
@@ -96,16 +162,4 @@ img:hover{
     .intro-text h1{
         font-size: 30px;
     }
-}
-
-/*Footer*/
-
-footer{
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+}   
